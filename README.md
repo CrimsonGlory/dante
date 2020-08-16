@@ -9,7 +9,7 @@ docker-compose.yml
 dante:
   image: vimagick/dante
   ports:
-    - "1080:1080"
+    - "1081:1080"
   volumes:
     - ./sockd.conf:/etc/sockd.conf
   restart: always
@@ -51,4 +51,4 @@ $ docker exec -it dante_dante_1 bash
 >>> exit
 ```
 
-$ curl -x socks5h://username:password@127.0.0.1:1080 https://www.youtube.com
+$ curl -x socks5h://username:password@127.0.0.1:1081 https://www.youtube.com
