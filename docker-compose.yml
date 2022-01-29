@@ -3,5 +3,5 @@ dante:
   ports:
     - "4194:1080"
   volumes:
-    - ./sockd.conf:/etc/sockd.conf
+    - ./sockd.conf:/etc/dante/sockd.conf
   restart: always
